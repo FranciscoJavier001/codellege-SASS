@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.contenedor {
+  width: 100%;
+  height: 100vh;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+}
+
+.contenedor > .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contenedor > .row > div {
+  position: relative;
+  width: 18vw;
+  height: 18vh;
+  border: 2px solid white;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 2px solid white;
+  opacity: 1;
+}
+
+.contenedor > .row > div > span {
+  display: block;
+  position: absolute;
+  color: white;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  visibility: hidden;
+  font-size: 30px;
+}
+
+img::after {
+  content: attr("data-text");
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+.contenedor > .row > div:hover > img {
+  opacity: 0.3;
+  transition: 0.5s;
+}
+
+.contenedor > .row > div:hover > span {
+  visibility: visible;
+}
+
+/*# sourceMappingURL=style.css.map */

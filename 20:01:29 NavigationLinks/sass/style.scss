@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: black;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+ul li {
+    list-style-type: none;
+    margin: 0px 20px;
+    height: 10vh;
+}
+
+ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+ul:hover li a {
+    transform: scale(2);
+    opacity: .2;
+    filter: blur(2px);
+}
+
+ul li a:hover {
+    transform: scale(2);
+    opacity: 1;
+    filter: blur(0);
+}
+
+ul li a::before {
+    content: '';
+    background: rgb(184, 57, 57);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: .5s;
+}

@@ -1,0 +1,509 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+#header,
+h1 {
+    background-color: #1e2d3b;
+    height: 100px;
+}
+
+#header h1 {
+    float: left;
+    width: 333px;
+    background-color: #edcd20;
+}
+
+#img1 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 30px;
+    top: 25px;
+}
+
+#text {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#text1 {
+    display: block;
+    padding-top: 30px;
+    padding-left: 95px;
+}
+
+#text2 {
+    font-weight: lighter;
+}
+
+#menu {
+    float: right;
+}
+
+#menu ul li {
+    font-size: 13px;
+    display: inline-block;
+    margin: 60px 60px 0px 13px;
+    text-transform: uppercase;
+}
+
+#menu ul li a {
+    color: white;
+    text-decoration: none;
+    transition: all 600ms;
+}
+
+#menu ul li a:hover {
+    color: #edcd20;
+}
+
+.text3 {
+    position: absolute;
+    transform: translate(65%, 80%);
+    display: block;
+    font-size: 60px;
+    text-align: center;
+    width: 750px;
+    text-transform: uppercase;
+    color: #797777;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+#video {
+    margin-top: 5.6%;
+    width: 100%;
+    animation: linear infinite;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#line {
+    background-color: #edcd20;
+    width: 120px;
+    height: 12px;
+    transform: translate(670%, 1050%);
+}
+
+#list {
+    display: flex;
+    justify-content: center;
+}
+
+#box1,
+#box2,
+#box3 {
+    clear: both;
+    display: inline-flex;
+    background-color: #f7f7f7;
+    width: 300px;
+    height: 550px;
+    margin: 10% 3% 5% 0%;
+}
+
+.imgs {
+    position: absolute;
+    width: 300px;
+    height: 230px;
+}
+
+.text4 {
+    transform: translate(0%, 500%);
+    padding-top: 2px;
+    padding-left: 28px;
+    padding-right: 28px;
+    width: 300px;
+    height: 50px;
+}
+
+.title3 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #3d5975;
+}
+
+.text5 {
+    font-size: 17px;
+}
+
+#fondoCompleto {
+    position: relative;
+    background-image: url(./../img/img4.JPG);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+    float: right;
+}
+
+#fondoGris {
+    background-color: #f7f7f7;
+    width: 50%;
+    height: 900px;
+    float: left;
+}
+
+.text6 {
+    transform: translate(35%, 200%);
+    font-size: 60px;
+    text-align: center;
+    width: 750px;
+    text-transform: uppercase;
+    color: #797777;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.line2 {
+    background-color: #edcd20;
+    width: 120px;
+    height: 12px;
+    transform: translate(390%, 1250%);
+}
+
+.text7 {
+    width: 350px;
+    transform: translate(134%, 80%);
+}
+
+#linea3 {
+    clear: both;
+    height: 200px;
+    width: 100%;
+    background-color: #edcd20;
+}
+
+#listaReconocimientos ul {
+    font-size: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 1775px;
+    text-align: center;
+    padding-top: 3%;
+    font-weight: bold;
+}
+
+#numeros {
+    color: white;
+}
+
+.text8 {
+    font-size: 25px;
+    text-align: center;
+    width: 150px;
+}
+
+#l1 {
+    position: absolute;
+    width: 1px;
+    height: 75px;
+    background-color: white;
+    transform: translate(515px, -125%);
+}
+
+#l2 {
+    position: absolute;
+    width: 1px;
+    height: 75px;
+    background-color: white;
+    transform: translate(875px, -125%);
+}
+
+#l3 {
+    position: absolute;
+    width: 1px;
+    height: 75px;
+    background-color: white;
+    transform: translate(1280px, -125%);
+}
+
+#proyectos {
+    transform: translate(500px, 1150px);
+}
+
+#linea4 {
+    transform: translate(820px, 1230px);
+}
+
+.contenedorImagenes {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedorImagenes>.imagenes {
+    position: absolute;
+    transform: translate(-20px, 1250px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorImagenes>.imagenes>div {
+    position: relative;
+    width: 455px;
+    height: 470px;
+    border: 15px solid white;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 2px solid white;
+    opacity: 1;
+}
+
+.contenedorImagenes>.imagenes>div>span {
+    display: block;
+    position: absolute;
+    color: black;
+    top: 50px;
+    transform: translateY(175px);
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    visibility: hidden;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+img::after {
+    content: attr("data-text");
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+.contenedorImagenes>.imagenes>div:hover>img {
+    opacity: 0.3;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.contenedorImagenes>.imagenes>div:hover>span {
+    visibility: visible;
+}
+
+.secProyecto {
+    height: 100wh;
+    width: 100vw;
+}
+
+.contenedorImagenes {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedorImagenes>.segundasImagenes {
+    position: absolute;
+    transform: translate(-20px, 1750px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorImagenes>.segundasImagenes>div {
+    position: relative;
+    width: 455px;
+    height: 470px;
+    border: 15px solid white;
+}
+
+.contenedorImagenes>.segundasImagenes>div>span {
+    display: block;
+    position: absolute;
+    color: black;
+    top: 50px;
+    transform: translateY(175px);
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    visibility: hidden;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+img::after {
+    content: attr("data-text");
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+.contenedorImagenes>.segundasImagenes>div:hover>img {
+    opacity: 0.3;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.contenedorImagenes>.segundasImagenes>div:hover>span {
+    visibility: visible;
+}
+
+#seccionClientes {
+    background-color: #f7f7f7;
+    position: absolute;
+    transform: translate(0%, 2350px);
+    width: 100%;
+    height: 400px;
+}
+
+#nombreClientes {
+    transform: translate(520px, 80px);
+}
+
+#lineaClientes {
+    transform: translate(850px, 100px);
+}
+
+.logos {
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+.logos:hover {
+    cursor: pointer;
+}
+
+#seccionContacto {
+    position: relative;
+    width: 80%;
+    height: 100px;
+    transform: translate(360px, 2100px);
+}
+
+iframe {
+    width: 1100px;
+}
+
+#nombreContacto {
+    transform: translate(200px, -120px);
+}
+
+#lineaContacto {
+    transform: translate(510px, -100px);
+}
+
+.encabezadosSeccionPreguntas {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.textoSeccionPreguntas {
+    font-size: 20px;
+}
+
+#seccionPreguntas {
+    position: absolute;
+    top: 1450px;
+}
+
+#textoPreguntas {
+    position: absolute;
+    top: 1500px;
+}
+
+.campos {
+    background-color: #dad8d8;
+    color: white;
+}
+
+#campoNombre {
+    position: absolute;
+    top: 1600px;
+    left: 0px;
+    width: 442px;
+    height: 20px;
+}
+
+#campoEmail {
+    position: absolute;
+    top: 1650px;
+    left: 0px;
+    width: 442px;
+    height: 20px;
+}
+
+#campoAsunto {
+    position: absolute;
+    top: 1700px;
+    left: 0px;
+    width: 442px;
+    height: 20px;
+}
+
+#campoMensaje {
+    position: absolute;
+    top: 1750px;
+    left: 0px;
+    width: 442px;
+    height: 140px;
+}
+
+#botonEnviar {
+    position: absolute;
+    top: 1900px;
+    left: 396px;
+    height: 30px;
+    width: 50px;
+    background-color: black;
+    color: white;
+}
+
+#seccionOficina {
+    position: absolute;
+    top: 1460px;
+    left: 700px;
+}
+
+#textoOficinas {
+    position: absolute;
+    top: 1500px;
+    left: 700px;
+}
+
+#seccionEmpleos {
+    position: absolute;
+    top: 1670px;
+    left: 700px;
+}
+
+#textoEmpleos {
+    position: absolute;
+    top: 1730px;
+    left: 700px;
+}
+
+#seccionPresupuesto {
+    position: absolute;
+    top: 1860px;
+    left: 700px;
+}
+
+
+/* Practica 22 - Pagina WIX */
+
+
+/*# sourceMappingURL=style.css.map */

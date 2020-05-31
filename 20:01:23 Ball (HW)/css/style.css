@@ -1,0 +1,94 @@
+.box {
+  background: blue;
+  height: 90vh;
+  width: 45%;
+  position: relative;
+}
+
+#caja {
+  position: absolute;
+  margin-top: 0px;
+  width: 150px;
+  height: 150px;
+  background: lightseagreen;
+  color: white;
+  border: 5px solid black;
+  font-size: 20px;
+  text-align: left;
+  line-height: 100px;
+  animation-name: desplazamiento;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes desplazamiento {
+  0% {
+    top: 0%;
+    margin-right: 100%;
+    transform: rotate(360deg);
+    border-radius: 999%;
+  }
+  10% {
+    top: 83%;
+    margin-right: 100%;
+    transform: rotate(360deg);
+    border-radius: 999%;
+  }
+  20% {
+    top: 0%;
+    margin-right: 100%;
+    transform: rotate(360deg);
+    border-radius: 999%;
+  }
+  30% {
+    top: 83%;
+    margin-right: 100%;
+    transform: rotate(360deg);
+    border-radius: 999%;
+  }
+  40% {
+    top: 0%;
+    margin-right: 100%;
+    transform: rotate(360deg);
+    border-radius: 999%;
+  }
+  50% {
+    top: 83%;
+    margin-right: 100%;
+    transform: rotate(360deg);
+    border-radius: 999%;
+  }
+  60% {
+    top: 0%;
+    margin-left: 80%;
+    transform: rotate(360deg);
+    border-radius: 999%;
+  }
+  70% {
+    top: 83%;
+    margin-left: 60%;
+    transform: rotate(360deg);
+    border-radius: 999%;
+  }
+  80% {
+    top: 0%;
+    margin-left: 40%;
+    transform: rotate(360deg);
+    border-radius: 999%;
+  }
+  90% {
+    top: 83%;
+    margin-left: 20%;
+    transform: rotate(360deg);
+    border-radius: 999%;
+  }
+  100% {
+    top: 0%;
+    margin-right: 0%;
+    transform: rotate(360% deg);
+    border-radius: 999%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

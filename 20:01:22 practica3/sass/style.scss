@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box; //No permite que se salga de tamaño asignado
+}
+
+.sec1 {
+    background: url(./../img/img.jpg); //background-repeat: no-repeat; en caso que la imagen se repita
+    //background-repeat: no-repeat; //que la imagen no se repita en caso que se este repitiendo
+    //background-size: cover; //especificamos el tamaño de la imagen
+    //background-position: center; //desde donde rece la imagen
+    background-attachment: fixed; //el fondo se queda estatico y solo sube lo demas
+}
+
+.sec2 {
+    background: url(./../img/img2.jpg); //background-repeat: no-repeat; en caso que la imagen se repita
+    //background-repeat: no-repeat; //que la imagen no se repita en caso que se este repitiendo
+    //background-size: cover; //especificamos el tamaño de la imagen
+    //background-position: center; //desde donde rece la imagen
+    background-attachment: fixed; //el fondo se queda estatico y solo sube lo demas
+}
+
+.sec3 {
+    background: url(./../img/img3.jpg); //background-repeat: no-repeat; en caso que la imagen se repita
+    //background-repeat: no-repeat; //que la imagen no se repita en caso que se este repitiendo
+    //background-size: cover; //especificamos el tamaño de la imagen
+    //background-position: center; //desde donde rece la imagen
+    background-attachment: fixed; //el fondo se queda estatico y solo sube lo demas
+}
+
+.secText {
+    height: auto; //la seccion se vuelve automatica
+    padding: 50px 100px;
+}
+
+.secText>h1 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 48px;
+    color: gray;
+}
+
+.secText>p {
+    font-size: 18px;
+    text-align: justify;
+}
